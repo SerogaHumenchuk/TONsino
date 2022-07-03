@@ -1,0 +1,916 @@
+body {
+  background-color: #07073f;
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html, body {
+  cursor: default;
+  -webkit-touch-callout: none;
+  user-select: none;
+  -khtml-user-select: none;
+  font-family: arial;
+}
+
+#container {
+  height: 470px;
+  color: #fff;
+  justify-content: center;
+  padding: 120px 20px;
+  display: flex;
+}
+
+#notification {
+  width: 500px;
+  height: 318px;
+  z-index: 10;
+  background-color: #ad0205;
+  border: 8px solid #d3b201;
+  border-radius: 12px;
+  transition: all 1s;
+  position: absolute;
+}
+
+.nSpan {
+  text-align: center;
+  font-size: 53px;
+  display: block;
+  position: relative;
+  top: 105px;
+}
+
+.nBtn {
+  width: 45%;
+  text-align: center;
+  cursor: pointer;
+  background-color: green;
+  border-radius: 15px;
+  padding: 10px;
+  font-size: 32px;
+  transition: all .5s;
+  display: block;
+  position: relative;
+  top: 116px;
+  left: 25%;
+  box-shadow: 3px 4px #00000040;
+}
+
+.testOffchainPayments {
+  height: 40px;
+  color: #13cbec;
+  cursor: pointer;
+  background-color: #0000;
+  border: 2px solid #13cbec;
+  border-radius: 15px;
+  font-size: 20px;
+  transition: all .5s;
+  box-shadow: 3px 4px #00000040;
+}
+
+.nBtn:active {
+  top: 118px;
+  left: calc(25% + 2px);
+  box-shadow: 1px 2px #00000040;
+}
+
+.nsWin {
+  position: absolute;
+  left: 4px;
+}
+
+.nsWinBlock {
+  border-left: 1px solid;
+  border-right: 1px solid;
+  padding-left: 40px;
+  padding-right: 40px;
+  font-size: 21px;
+  display: inline-block;
+}
+
+#betting_board {
+  width: 500px;
+  height: 315px;
+  border: 1px solid;
+}
+
+.bbtop {
+  margin-left: 2px;
+}
+
+.bbtoptwo {
+  width: calc(50% - 8px);
+  text-align: center;
+  border: 1px solid;
+  margin-left: -2px;
+  padding: 12px 4px;
+  font-size: 20px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.number_board {
+  margin-left: 1px;
+}
+
+.number_block {
+  width: 39.94px;
+  text-align: center;
+  border: 1px solid;
+  margin: 0 -.2px;
+  padding: 32px 0;
+  display: inline-block;
+}
+
+.nbn {
+  letter-spacing: 2px;
+  filter: progid:DXImageTransform. Microsoft. BasicImage(rotation= 3);
+  font-size: 20px;
+  font-weight: bold;
+  transform: rotate(-90deg);
+}
+
+.bo3_board, .oto_board {
+  width: 500px;
+  margin-left: 1px;
+}
+
+.bo3_block, .oto_block {
+  width: 156.65px;
+  text-align: center;
+  border: 1px solid;
+  margin-left: -1.98px;
+  padding: 8px 5px;
+  font-size: 20px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.oto_block {
+  width: 114.94px;
+  margin-left: -1.98px;
+}
+
+.number_0 {
+  border: 2px solid;
+  border-top-left-radius: 100%;
+  border-bottom-left-radius: 100%;
+  margin-top: -.516px;
+  margin-left: -57px;
+  padding: 120.55px 20px;
+  position: absolute;
+}
+
+.tt1_block {
+  width: 65px;
+  border: 2px solid;
+  margin-top: -89.75px;
+  margin-left: 498px;
+  padding: 31.65px 0;
+  position: absolute;
+}
+
+.winning_lines {
+  width: 603px;
+  height: 0;
+  margin-top: -137px;
+  position: absolute;
+}
+
+.wlttb {
+  width: 100%;
+  height: 10px;
+  margin-left: -7.75px;
+  position: relative;
+  top: 269px;
+}
+
+#wlttb_top {
+  margin-top: -89px;
+  margin-left: 11px;
+  position: absolute;
+}
+
+#wlttb_2, #wlttb_3 {
+  margin-top: 79px;
+}
+
+.wlrtl {
+  width: 10px;
+  height: 266px;
+  margin-left: 37px;
+  display: inline-block;
+  position: relative;
+  top: -3px;
+}
+
+#wlrtl_2, #wlrtl_3, #wlrtl_6, #wlrtl_9, #wlrtl_11 {
+  margin-left: 31px;
+}
+
+#wlrtl_4, #wlrtl_5, #wlrtl_7, #wlrtl_8, #wlrtl_10 {
+  margin-left: 32px;
+}
+
+.wlcb {
+  width: 477px;
+  height: 41px;
+  margin-left: 13px;
+  position: absolute;
+  top: 255px;
+}
+
+#wlcb_2 {
+  top: 343px;
+}
+
+.cbbb {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  margin-top: 9.5px;
+  margin-left: 22px;
+  display: inline-block;
+  position: relative;
+}
+
+#cbbb_1, #cbbb_4, #cbbb_5, #cbbb_7, #cbbb_9, #cbbb_11, #cbbb_12, #cbbb_15, #cbbb_16, #cbbb_18, #cbbb_20, #cbbb_22 {
+  margin-left: 21px;
+}
+
+#cbbb_3, #cbbb_14 {
+  margin-left: 20.5px;
+}
+
+#cbbb_6, #cbbb_17 {
+  margin-left: 23px;
+}
+
+#cbbb_8, #cbbb_10, #cbbb_19, #cbbb_21 {
+  margin-left: 22px;
+}
+
+.ttbbetblock {
+  width: 19.1px;
+  height: 10px;
+  cursor: pointer;
+  z-index: 3;
+  margin-left: 22.52px;
+  display: inline-block;
+  position: relative;
+  top: -2px;
+}
+
+.rtlbb1, .rtlbb2, .rtlbb3 {
+  height: 45px;
+  width: 10px;
+  margin-top: 23px;
+}
+
+.rtlbb2, .rtlbb3 {
+  margin-top: 42px;
+}
+
+.spinBtn {
+  cursor: pointer;
+  color: #000;
+  background-color: #ffec00;
+  border-radius: 100%;
+  margin-top: 329px;
+  margin-left: -392px;
+  padding: 10px 5px;
+  font-size: 15px;
+  font-weight: bold;
+  position: absolute;
+}
+
+.redNum {
+  background-color: #e0080b;
+}
+
+.blackNum {
+  background-color: #000;
+}
+
+.chipDeck, .bankContainer {
+  width: 310px;
+  height: 39px;
+  border: 1px solid;
+  border-radius: 10px;
+  margin-top: -74px;
+  margin-left: -383px;
+  padding: 3px 0;
+  position: absolute;
+  box-shadow: inset -2px -4px #0003;
+}
+
+.bankContainer {
+  margin-top: -21px;
+}
+
+.cdChip {
+  width: 27px;
+  height: 27px;
+  color: #000;
+  cursor: pointer;
+  background-color: #fff;
+  border: 5px solid;
+  border-radius: 100%;
+  margin-left: 9px;
+  display: inline-block;
+}
+
+.cdChipSpan {
+  display: inherit;
+  width: 26px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  position: relative;
+  top: 5px;
+}
+
+.cdChipActive {
+  position: relative;
+  top: -4px;
+  box-shadow: 0 4px #0003;
+}
+
+.clearBet {
+  color: #fff;
+  background-color: red;
+  border-color: red;
+  margin-left: 22px;
+}
+
+.clearBet .cdChipSpan {
+  margin-left: -2px;
+}
+
+.bank, .bet {
+  width: calc(50% - 28px);
+  text-align: right;
+  background-color: #000;
+  border: 4px solid silver;
+  border-radius: 7px;
+  margin-left: 7px;
+  padding: 5px;
+  font-size: 18px;
+  display: inline-block;
+}
+
+.pnBlock {
+  width: 500px;
+  height: 45px;
+  border: 1px solid;
+  margin-top: 10px;
+  margin-left: -1px;
+  position: absolute;
+}
+
+#pnContent {
+  width: 485px;
+  height: 31px;
+  color: #000;
+  background-color: #fff;
+  border: 4px solid #d5b714;
+  margin-top: 3px;
+  margin-left: 4px;
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+.pnRed, .pnBlack, .pnGreen {
+  padding: 10px;
+  font-size: 19px;
+  display: inline;
+  position: relative;
+  top: 5px;
+}
+
+.pnRed {
+  color: red;
+}
+
+.pnBlack {
+  color: #000;
+}
+
+.pnGreen {
+  color: green;
+}
+
+@keyframes wheelRotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+@keyframes ballRotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(-359deg);
+  }
+}
+
+.wheel {
+  height: 312px;
+  width: 312px;
+  position: relative;
+  left: -75px;
+}
+
+.ballTrack {
+  width: 212px;
+  height: 207px;
+  z-index: 2;
+  border-radius: 100%;
+  position: absolute;
+  top: 50px;
+  left: 47.5px;
+}
+
+.ball {
+  width: 16px;
+  height: 16px;
+  background-color: #fff;
+  border-radius: 100%;
+  position: relative;
+  top: -8px;
+  left: 109px;
+}
+
+.turret {
+  width: 45px;
+  height: 45px;
+  z-index: 1;
+  background: radial-gradient(circle at 30% 30%, #f3c620, #1a1608);
+  border-radius: 100%;
+  position: absolute;
+  top: 133px;
+  left: 134px;
+}
+
+.turretHandle {
+  width: 87px;
+  height: 14px;
+  background: radial-gradient(circle at 44%, #f3c620, #6a570f);
+  position: absolute;
+  top: 148px;
+  left: 113px;
+}
+
+.thendOne, .thendTwo {
+  width: 25px;
+  height: 25px;
+  background: radial-gradient(circle at 30% 30%, #f3c620, #1a1608);
+  border-radius: 100%;
+  position: absolute;
+}
+
+.thendOne {
+  top: -6px;
+  left: -20px;
+}
+
+.thendTwo {
+  top: -6px;
+  left: 83px;
+}
+
+.outerRim {
+  width: 290px;
+  height: 290px;
+  border: 10px solid #f3c620;
+  border-radius: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-shadow: 0 0 8px #00000080;
+}
+
+.block {
+  width: 290px;
+  height: 290px;
+  clip: rect(0px, 145px, 290px, 0px);
+  border-radius: 100%;
+  transition: all 1s;
+  position: absolute;
+}
+
+.sect {
+  width: 290px;
+  height: 290px;
+  clip: rect(0px, 290px, 290px, 145px);
+  border-radius: 100%;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.double, .single {
+  z-index: 1;
+  color: #fff;
+  font-size: 14px;
+  position: absolute;
+  transform: rotate(3deg);
+}
+
+.double {
+  margin-top: 4.5px;
+  left: 148px;
+}
+
+.single {
+  margin-top: 4.5px;
+  left: 152px;
+}
+
+#sect1 .block {
+  background-color: #016d29;
+  transform: rotate(9.73deg);
+}
+
+#sect2 .block, #sect4 .block, #sect6 .block, #sect8 .block, #sect10 .block, #sect12 .block, #sect14 .block, #sect16 .block, #sect18 .block, #sect20 .block, #sect22 .block, #sect24 .block, #sect26 .block, #sect28 .block, #sect30 .block, #sect32 .block, #sect34 .block, #sect36 .block {
+  background-color: #e0080b;
+  transform: rotate(9.73deg);
+}
+
+#sect3 .block, #sect5 .block, #sect7 .block, #sect9 .block, #sect11 .block, #sect13 .block, #sect15 .block, #sect17 .block, #sect19 .block, #sect21 .block, #sect23 .block, #sect25 .block, #sect27 .block, #sect29 .block, #sect31 .block, #sect33 .block, #sect35 .block, #sect37 .block {
+  background-color: #000;
+  transform: rotate(9.73deg);
+}
+
+#sect2 {
+  transform: rotate(9.73deg);
+}
+
+#sect3 {
+  transform: rotate(19.46deg);
+}
+
+#sect4 {
+  transform: rotate(29.19deg);
+}
+
+#sect5 {
+  transform: rotate(38.92deg);
+}
+
+#sect6 {
+  transform: rotate(48.65deg);
+}
+
+#sect7 {
+  transform: rotate(58.38deg);
+}
+
+#sect8 {
+  transform: rotate(68.11deg);
+}
+
+#sect9 {
+  transform: rotate(77.84deg);
+}
+
+#sect10 {
+  transform: rotate(87.57deg);
+}
+
+#sect11 {
+  transform: rotate(97.3deg);
+}
+
+#sect12 {
+  transform: rotate(107.03deg);
+}
+
+#sect13 {
+  transform: rotate(116.76deg);
+}
+
+#sect14 {
+  transform: rotate(126.49deg);
+}
+
+#sect15 {
+  transform: rotate(136.22deg);
+}
+
+#sect16 {
+  transform: rotate(145.95deg);
+}
+
+#sect17 {
+  transform: rotate(155.68deg);
+}
+
+#sect18 {
+  transform: rotate(165.41deg);
+}
+
+#sect19 {
+  transform: rotate(175.14deg);
+}
+
+#sect20 {
+  transform: rotate(184.87deg);
+}
+
+#sect21 {
+  transform: rotate(194.6deg);
+}
+
+#sect22 {
+  transform: rotate(204.33deg);
+}
+
+#sect23 {
+  transform: rotate(214.06deg);
+}
+
+#sect24 {
+  transform: rotate(223.79deg);
+}
+
+#sect25 {
+  transform: rotate(233.52deg);
+}
+
+#sect26 {
+  transform: rotate(243.25deg);
+}
+
+#sect27 {
+  transform: rotate(252.98deg);
+}
+
+#sect28 {
+  transform: rotate(262.71deg);
+}
+
+#sect29 {
+  transform: rotate(272.44deg);
+}
+
+#sect30 {
+  transform: rotate(282.17deg);
+}
+
+#sect31 {
+  transform: rotate(291.9deg);
+}
+
+#sect32 {
+  transform: rotate(301.63deg);
+}
+
+#sect33 {
+  transform: rotate(311.36deg);
+}
+
+#sect34 {
+  transform: rotate(321.09deg);
+}
+
+#sect35 {
+  transform: rotate(330.82deg);
+}
+
+#sect36 {
+  transform: rotate(340.55deg);
+}
+
+#sect37 {
+  transform: rotate(350.28deg);
+}
+
+.pockets {
+  width: 235px;
+  height: 235px;
+  opacity: .5;
+  background-color: #000;
+  border-radius: 100%;
+  position: absolute;
+  top: 37px;
+  left: 37px;
+}
+
+.pocketsRim {
+  width: 235px;
+  height: 235px;
+  border: 3px solid silver;
+  border-radius: 100%;
+  position: absolute;
+  top: 34px;
+  left: 34px;
+}
+
+.cone {
+  height: 180px;
+  width: 180px;
+  background: radial-gradient(circle at 100px 100px, #892c10, #000);
+  border: 3px solid #9f9a9a;
+  border-radius: 100%;
+  position: absolute;
+  top: 62px;
+  left: 61px;
+}
+
+.chip {
+  width: 21px;
+  height: 21px;
+  background-color: #fff;
+  border: 3px solid;
+  border-radius: 100%;
+  position: absolute;
+}
+
+.chipSpan {
+  color: #000;
+  text-align: center;
+  font-size: 11px;
+  font-weight: bold;
+  display: block;
+  position: relative;
+  top: 4px;
+}
+
+.gold {
+  border-color: gold;
+}
+
+.red {
+  border-color: red;
+}
+
+.orange {
+  border-color: orange;
+}
+
+.blue {
+  border-color: #00f;
+}
+
+.tt1_block .chip {
+  margin-top: -24px;
+  margin-left: 19px;
+}
+
+.number_block .chip {
+  margin-top: -24px;
+  margin-left: 7px;
+}
+
+.wlrtl .chip {
+  margin-top: 9px;
+  margin-left: -9px;
+}
+
+.cbbb .chip {
+  margin-top: -5px;
+  margin-left: -4px;
+}
+
+.ttbbetblock .chip {
+  margin-top: -8px;
+  margin-left: -7px;
+}
+
+#wlttb_top .chip {
+  margin-top: -8px;
+  margin-left: -5px;
+}
+
+.bbtoptwo .chip {
+  margin-top: -25px;
+  margin-left: 108px;
+}
+
+.number_0 .chip {
+  margin-top: -22px;
+  margin-left: -8px;
+}
+
+.bo3_block .chip {
+  margin-top: -26px;
+  margin-left: 65px;
+}
+
+.oto_block .chip {
+  margin-top: -25px;
+  margin-left: 45px;
+}
+
+.loginWrapper {
+  width: 100vw;
+  height: 100vh;
+  background-color: #07073f;
+  background-image: url("https://d9hhrg4mnvzow.cloudfront.net/join.cloudbet.com/en/landing/bitcoin-bonus/4d824006-pattern-background_1000000000000000000028.png");
+  background-position: left 700px bottom 0;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.connectWalletButton {
+  width: 200px;
+  height: 50px;
+  color: #13cbec;
+  cursor: pointer;
+  background: none;
+  border: 2px solid #13cbec;
+  border-radius: 15px;
+  margin: auto;
+  padding: 10px 20px;
+  font-size: 20px;
+  position: absolute;
+  inset: 0;
+}
+
+.connectWalletButton:hover {
+  transition-duration: 1s;
+  transform: scale(1.03);
+}
+
+.header {
+  width: calc(100vw - 40px);
+  height: 10vh;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2vh;
+  padding: 0 20px;
+  display: flex;
+}
+
+.gamesList {
+  width: 60%;
+  height: 100%;
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
+}
+
+.gameItem {
+  color: #13cbec;
+  cursor: pointer;
+  padding: 8px 16px;
+  font-size: 20px;
+}
+
+.gameItem:hover {
+  transition-duration: .3s;
+  transform: scale(1.05);
+}
+
+.rouletteGame {
+  cursor: pointer;
+  border-bottom: 2px solid #13cbec;
+}
+
+.finishGameBtn {
+  color: #13cbec;
+  cursor: pointer;
+  background-color: #0000;
+  border: 2px solid #13cbec;
+  border-radius: 15px;
+  padding: 10px 20px;
+  font-size: 20px;
+}
+
+/*# sourceMappingURL=index.b07a87f3.css.map */

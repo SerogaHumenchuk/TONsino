@@ -1,0 +1,32 @@
+.loginWrapper {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-color: #07073f;
+  background-image: url("https://d9hhrg4mnvzow.cloudfront.net/join.cloudbet.com/en/landing/bitcoin-bonus/4d824006-pattern-background_1000000000000000000028.png");
+  background-position: bottom 0 left 700px;
+  background-repeat: no-repeat;
+}
+
+.connectWalletButton {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 200px;
+  height: 50px;
+  background: transparent;
+  padding: 10px 20px;
+  color: #13CBEC;
+  font-size: 20px;
+  border-radius: 15px;
+  border: 2px solid #13CBEC;
+  cursor: pointer;
+}
+
+.connectWalletButton:hover {
+  transform: scale(1.03);
+  transition-duration: 1s;
+}

@@ -1,0 +1,44 @@
+.header {
+  width: calc(100vw - 40px);
+  height: 10vh;
+  margin-bottom:  2vh;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.gamesList {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.gameItem {
+  color: #13CBEC;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 8px 16px;
+}
+
+.gameItem:hover {
+  transform: scale(1.05);
+  transition-duration: 0.3s;
+}
+
+.rouletteGame {
+  border-bottom: 2px solid #13CBEC;
+  cursor: pointer;
+}
+
+.finishGameBtn {
+  color: #13CBEC;
+  border-radius: 15px;
+  border: 2px solid #13CBEC;
+  cursor: pointer;
+  font-size: 20px;
+  padding: 10px 20px;
+  background-color: transparent;
+}
